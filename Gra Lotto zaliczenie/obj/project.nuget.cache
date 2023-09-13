@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "oUU4ORv/AUps+w+lIHXH9NIn3XCNTTECkGQunsDJZqvCOTPhwtc5LoU39otOYptT7wvKRboLblP4gdr9NSROaA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\patry\\Desktop\\projekt C# zaliczenie\\Gra Lotto zaliczenie\\Gra Lotto zaliczenie.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\patry\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\patry\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.14\\microsoft.netcore.app.host.win-x64.6.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
