@@ -1,0 +1,45 @@
+class UlamekZ:
+    def __init__(self, mianownik, lincznik):
+        if self.mianownik == 0:
+            return ("Blad")
+        self.lincznik = lincznik
+        self.mianownik = mianownik
+
+    def nwd(self, a, b):
+        while b:
+            a, b = b, a % b
+        return a
+
+    def skroc(self):
+        nwd = self.nwd(abs(self.licznik), abs(self.mianownik))
+        self.licznik //= nwd
+        self.mianownik //= nwd
+
+    @staticmethod
+    def dodaj(ulamek1, ulamek2):
+        licznik = ulamek1.licznik * ulamek2.mianownik + ulamek2.licznik * ulamek1.mianownik
+        mianownik = ulamek1.mianownik * ulamek2.mianownik
+        return UlamekZ(licznik, mianownik)
+
+    @staticmethod
+    def odejmij(ulamek1, ulamek2):
+        licznik = ulamek1.licznik * ulamek2.mianownik - ulamek2.licznik * ulamek1.mianownik
+        mianownik = ulamek1.mianownik * ulamek2.mianownik
+        return UlamekZ(licznik, mianownik)
+
+    @staticmethod
+    def mnoz(ulamek1, ulamek2):
+        licznik = ulamek1.licznik * ulamek2.licznik
+        mianownik = ulamek1.mianownik * ulamek2.mianownik
+        return UlamekZ(licznik, mianownik)
+
+    @staticmethod
+    def dziel(ulamek1, ulamek2):
+        if ulamek2.licznik == 0:
+            raise ValueError("Nie można dzielić przez ułamek równy zero.")
+        licznik = ulamek1.licznik * ulamek2.mianownik
+        mianownik = ulamek1.mianownik * ulamek2.licznik
+        return UlamekZ(licznik, mianownik)
+
+    def __str__(self):
+        return f"{self.licznik}/{self.mianownik}"

@@ -1,0 +1,70 @@
+import random
+
+class Human:
+    def __init__(self, name, age, height, weight, favorite_color):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.weight = weight
+        self.favorite_color = favorite_color
+
+    def display_name_and_age(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+    def display_physical_attributes(self):
+        print("Height:", self.height)
+        print("Weight:", self.weight)
+
+    def display_color(self):
+        print("Favorite Color:", self.favorite_color)
+
+    def modify_age(self):
+        self.age += 1
+        print("Age modified. New age:", self.age)
+
+    def modify_weight(self):
+        self.weight += random.randint(-5, 5)
+        print("Weight modified. New weight:", self.weight)
+
+    def calculate_bmi(self, height_in_cm, weight_in_kg):
+        bmi = weight_in_kg / ((height_in_cm / 100) ** 2)
+        self.bmi = bmi
+        print("BMI calculated and assigned as class variable:", self.bmi)
+
+
+class Cat:
+    def __init__(self, name, age, breed, weight, color):
+        self.name = name
+        self.age = age
+        self.breed = breed
+        self.weight = weight
+        self.color = color
+
+    def display_name_and_age(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+    def display_physical_attributes(self):
+        print("Breed:", self.breed)
+        print("Weight:", self.weight)
+
+    def display_color(self):
+        print("Color:", self.color)
+
+    def modify_age(self):
+        self.age += 1
+        print("Age modified. New age:", self.age)
+
+    def modify_weight(self):
+        self.weight += random.randint(-1, 1)
+        print("Weight modified. New weight:", self.weight)
+
+print()
+
+cat = Cat("Fluffy", 5, "Persian", 4, "White")
+cat.display_name_and_age()
+cat.display_physical_attributes()
+cat.display_color()
+cat.modify_age()
+cat.modify_weight()
