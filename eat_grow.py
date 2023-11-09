@@ -57,10 +57,6 @@ while running:
         character_x -= 5
     if keys[pygame.K_RIGHT] and character_x < width - 32:
         character_x += 5
-    if keys[pygame.K_UP] and character_y > 0:
-        character_y -= 5
-    if keys[pygame.K_DOWN] and character_y < height - 32:
-        character_y += 5
     character_x = max(0, min(width-120, character_x))
     for owoc in owoce:
         if (
